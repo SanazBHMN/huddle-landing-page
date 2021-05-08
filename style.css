@@ -1,1 +1,107 @@
+/* css custom properties */
+:root {
+  --color-primary-violet: hsl(257, 40%, 49%);
+  --color-primary-soft-magneta: hsl(300, 69%, 71%);
 
+  --color-neutral-100: #fff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  background-color: var(--color-primary-violet);
+  color: var(--color-neutral-100);
+}
+
+body,
+h2,
+p {
+  margin: 0;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  margin-top: 1.8em;
+}
+
+h2,
+p {
+  text-align: center;
+}
+
+.muckup-info p {
+  margin-top: 1em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header,
+section {
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-register {
+  font-family: "Poppins", sans-serif;
+  padding: 1em 8em;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: block;
+  margin: 2em auto;
+  outline: none;
+}
+
+.btn-register:hover {
+  color: var(--color-neutral-100);
+  background-color: var(--color-primary-soft-magneta);
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-left: 0.5em;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid var(--color-neutral-100);
+}
+
+ul li:hover {
+  color: var(--color-primary-soft-magneta);
+  border-color: var(--color-primary-soft-magneta);
+}
+
+a {
+  color: var(--color-neutral-100);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
